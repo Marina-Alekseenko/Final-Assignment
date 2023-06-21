@@ -16,3 +16,12 @@ int[] GetElementsLengthArray(string[] array, int[] lengthArray)
     for (int i = 0; i < array.Length; i++) lengthArray[i] = array[i].Length;
     return lengthArray;
 }
+
+int FindFinishArrayLength(int[] array, int lengthСondition)
+{
+    int lengthFinishArray = 0;
+    for (int i = 0; i < lengthArray.Length; i++)
+        if (lengthArray[i] <= lengthСondition) lengthFinishArray++;
+    return lengthFinishArray;
+}
+
