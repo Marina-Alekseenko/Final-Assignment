@@ -3,3 +3,10 @@
 // длина которых меньше либо равна 3 символам.
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
+
+string[] startArray = { "Sun", "Monday", "Tu",
+      "Wednesday", "Thirsday", "Fri", "Sat" };
+Console.WriteLine("Исходный массив:");
+for (int i = 0; i < startArray.Length; i++)
+    Console.Write(String.Join(" |", startArray[i], "| "));
+Console.WriteLine();
