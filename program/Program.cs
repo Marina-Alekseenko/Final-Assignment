@@ -25,3 +25,14 @@ int FindFinishArrayLength(int[] array, int lengthСondition)
     return lengthFinishArray;
 }
 
+void GetFinishArray(string[] startArray, string[] finishArray, int lengthСondition)
+{
+    int m = 0;
+    for (int i = 0; i < startArray.Length; i++)
+        if (startArray[i].Length <= lengthСondition)
+        {
+            finishArray[m] = startArray[i];
+            Console.Write(String.Join(" |", finishArray[m], "| "));
+            m++;
+        }
+}
