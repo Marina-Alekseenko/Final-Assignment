@@ -10,3 +10,9 @@ Console.WriteLine("Исходный массив:");
 for (int i = 0; i < startArray.Length; i++)
     Console.Write(String.Join(" |", startArray[i], "| "));
 Console.WriteLine();
+
+int[] GetElementsLengthArray(string[] array, int[] lengthArray)
+{
+    for (int i = 0; i < array.Length; i++) lengthArray[i] = array[i].Length;
+    return lengthArray;
+}
