@@ -11,6 +11,15 @@ for (int i = 0; i < startArray.Length; i++)
     Console.Write(String.Join(" |", startArray[i], "| "));
 Console.WriteLine();
 
+int[] lengthArray = new int[7];
+GetElementsLengthArray(startArray, lengthArray);
+
+int len = FindFinishArrayLength(lengthArray, 3);
+
+Console.WriteLine("Итоговый массив:");
+string[] finishArray = new string[len];
+GetFinishArray(startArray, finishArray, 3);
+
 int[] GetElementsLengthArray(string[] array, int[] lengthArray)
 {
     for (int i = 0; i < array.Length; i++) lengthArray[i] = array[i].Length;
